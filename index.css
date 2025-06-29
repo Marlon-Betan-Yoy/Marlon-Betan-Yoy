@@ -274,11 +274,25 @@ body > *:not(.profile):not(.page-nav):first-of-type {
             width: 90%;
             margin: 0 auto;
             text-align: center;
+            font-size: 0.9rem; /* smaller font size for smaller screens */
+            padding: 4px 6px; /* reduced padding for compactness */
+            width: 100%; /* full width for easier tapping */
+            box-sizing: border-box; /* ensure padding included in width */
+            text-align: center;
+        }
+
+        .page-nav ul {
+            flex-direction: column; /* stack vertically */
+            gap: 8px; /* spacing between buttons */
+            padding: 0;
+            margin: 0 auto;
+            width: 90%; /* limit width for better appearance */
         }
 
     .accordion {
         font-size: 1rem;
         width: 90%;
+        padding: .15rem;
     }
 
     .section-box {
