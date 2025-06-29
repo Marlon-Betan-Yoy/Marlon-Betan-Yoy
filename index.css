@@ -10,6 +10,10 @@ html, body {
     color: #FFD700; /* gold text */
 }
 
+#resume-content {
+    display: none !important;
+}
+
 /* 2. Background image */
 body {
     background-image: url('assets/EarthPictureSimpleTech.webp');
@@ -17,6 +21,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100%;
 }
 
 /*3. PROFILE: image floats free, text sits in its own box */
