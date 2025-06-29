@@ -309,6 +309,10 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         flex-wrap: wrap;
         gap: 6px;
     }
+
+    .ul-1001 li {
+        max-width: 250px; /* limit width for better appearance */
+    }
 }
 
 /* 2. Small Tablets: 601–900px */
@@ -316,6 +320,10 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     .profile-text-box {
         width: 80%;
         font-size: 1rem;
+    }
+
+    .ul-1001 li {
+        max-width: 250px; /* limit width for better appearance */
     }
 
     .page-nav {
@@ -343,6 +351,10 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     .section-box {
         font-size: 1.05rem;
     }
+    .ul-1001 li {
+        max-width: 250px; /* limit width for better appearance */
+    }
+
 }
 
 /* 4. Large Screens: 1201–1440px */
@@ -356,6 +368,11 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     .section-box {
         font-size: 1.1rem;
     }
+
+    .ul-1001 li {
+        max-width: 250px; /* limit width for better appearance */
+    }
+
 }
 
 /* 5. Extra-Large / TVs: 1441px+ */
@@ -383,5 +400,10 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         font-size: 1.1rem;
         padding: 10px 16px;
     }
+
+    .ul-1001 li {
+        max-width: 250px; /* limit width for better appearance */
+    }
+
 }
 
