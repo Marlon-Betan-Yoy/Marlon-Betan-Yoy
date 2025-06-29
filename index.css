@@ -117,7 +117,7 @@ body {
 .section-box {
     background: rgba(255,255,255,0.8);
     color: #000;
-    max-width: 700px; /* or whatever width you prefer */
+    max-width: 900px; /* or whatever width you prefer */
     margin: 10px auto 30px; /* auto-center + gap below */
     padding: 15px;
     border-radius: 6px;
@@ -128,6 +128,19 @@ body {
 section {
     text-align: center;
 }
+
+.section-box,
+.accordion,
+.profile-text-box {
+    width: auto;
+    min-width: 120px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
 .accordion {
     background: rgba(255,255,255,0.8);
     color: #000;
@@ -148,13 +161,13 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     /* 150px for image, ~20px for text-box padding, ~50px for nav height */
 }
 
+.resumecontenct
+
 /* Make header & nav stick to the top */
 .profile,
 .page-nav {
     position: relative;
     top: 0;
-    
-    
 }
 
     .accordion:after {
@@ -253,19 +266,10 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         background: rgba(255,255,255,1);
     }
 
-
-
-
 /* 1. Mobile: 0–600px */
 @media (max-width: 767px) {
     body {
         background-color: #111; /* darker background for mobile contrast */
-    }
-
-    .profile-text-box {
-        width: 90%;
-        font-size: 0.95rem;
-        padding: 15px 20px;
     }
 
     .page-nav {
@@ -293,16 +297,17 @@ body > *:not(.profile):not(.page-nav):first-of-type {
             width: 90%; /* limit width for better appearance */
         }
 
-    .accordion {
-        font-size: 1rem;
-        width: 90%;
-        padding: .15rem;
-    }
-
-    .section-box {
-        width: 90%;
+    .accordion,
+    .section-box,
+    .profile-text-box {
+        width: auto;
+        max-width: 95vw;
+        min-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 12px;
-        font-size: 0.95rem;
+        box-sizing: border-box;
+        text-align: center;
     }
 
     .social-icons {
@@ -310,9 +315,24 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         gap: 6px;
     }
 
+    .panel {
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
     .ul-1001 li {
         max-width: 250px; /* limit width for better appearance */
     }
+
+    .btn-1014 {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        width: 90%;
+        max-width: 260px;
+        margin: 12px auto;
+        box-sizing: border-box;
+    }
+
 }
 
 /* 2. Small Tablets: 601–900px */
@@ -332,13 +352,21 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
     .accordion {
         font-size: 1.1rem;
-        padding: 10px 18px;
     }
 
     .section-box {
         font-size: 1rem;
-        padding: 15px;
     }
+
+    .section-box,
+    .accordion {
+        max-width: 90vw;
+        width: auto;
+        min-width: 280px;
+        padding: 12px 16px;
+        margin: 10px auto;
+    }
+
 }
 
 /* 3. Medium Screens: 901–1200px */
@@ -355,6 +383,13 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         max-width: 250px; /* limit width for better appearance */
     }
 
+    .section-box,
+    .accordion {
+        max-width: 85vw;
+        width: auto;
+        min-width: 300px;
+        margin: 10px auto;
+    }
 }
 
 /* 4. Large Screens: 1201–1440px */
@@ -373,6 +408,13 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         max-width: 250px; /* limit width for better appearance */
     }
 
+    .section-box,
+    .accordion {
+        max-width: 80vw;
+        width: auto;
+        min-width: 320px;
+        margin: 10px auto;
+    }
 }
 
 /* 5. Extra-Large / TVs: 1441px+ */
@@ -405,5 +447,10 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         max-width: 250px; /* limit width for better appearance */
     }
 
+    .section-box,
+    .accordion {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
