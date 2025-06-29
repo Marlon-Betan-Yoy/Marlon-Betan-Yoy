@@ -243,6 +243,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     cursor: pointer;
     text-align: center;
     transition: background 0.3s ease;
+    align-self: center;
 }
 
     .btn-1014:hover {
