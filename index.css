@@ -235,7 +235,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         }
 
         .social-icons a.twitter {
-            background: #0d8ae0; /* Darkened from #1DA1F2 */
+            background: #005A9C; /* darker blue for contrast */
         }
 
         .social-icons a.facebook {
