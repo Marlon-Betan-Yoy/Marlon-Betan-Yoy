@@ -212,15 +212,15 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         }
 
         .social-icons a.twitter {
-            background: #1DA1F2;
+            background: #0d8ae0; /* Darkened from #1DA1F2 */
         }
 
         .social-icons a.facebook {
-            background: #1877F2;
+            background: #0e63d4; /* Darkened from #1877F2 */
         }
 
         .social-icons a.credly {
-            background: #0492C2;
+            background: #0376a1; /* Darkened from #0492C2 */
         }
 
         .social-icons a.github {
