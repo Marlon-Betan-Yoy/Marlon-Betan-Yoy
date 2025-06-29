@@ -176,6 +176,8 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
 .panel {
     display: none;
+    padding: 6px 9px; /* small but noticeable padding */
+    box-sizing: border-box;
 }
 
 /* 6. Social icons bar */
@@ -250,6 +252,8 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     .btn-1014:hover {
         background: rgba(255,255,255,1);
     }
+
+
 
 
 /* 1. Mobile: 0–600px */
