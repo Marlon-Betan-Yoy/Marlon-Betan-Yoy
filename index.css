@@ -257,7 +257,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
 
 /* 1. Mobile: 0–600px */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     body {
         background-color: #111; /* darker background for mobile contrast */
     }
@@ -312,7 +312,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 }
 
 /* 2. Small Tablets: 601–900px */
-@media (max-width: 900px) and (min-width: 601px) {
+@media (max-width: 900px) and (min-width: 768px) {
     .profile-text-box {
         width: 80%;
         font-size: 1rem;
@@ -348,7 +348,8 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 /* 4. Large Screens: 1201–1440px */
 @media (max-width: 1440px) and (min-width: 1201px) {
     .profile-text-box {
-        width: 650px;
+        width: auto;
+        min-width: 400px; /* ensure it’s wide enough */
         font-size: 1.1rem;
     }
 
@@ -364,8 +365,9 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     }
 
     .profile-text-box {
-        width: 800px;
+        width: auto;
         font-size: 1.25rem;
+        min-width: 500px; /* ensure it’s wide enough */
     }
 
     .section-box {
