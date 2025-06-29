@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (resumeBtn && resumeContent) {
         resumeBtn.addEventListener('click', () => {
-            const isHidden = resumeContent.style.display === 'none' || resumeContent.style.display === '';
+            const isHidden = window.getComputedStyle(resumeContent).display === 'none';
             resumeContent.style.display = isHidden ? 'block' : 'none';
             resumeBtn.textContent = isHidden ? 'Hide Resume' : 'Show Resume';
             resumeBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');

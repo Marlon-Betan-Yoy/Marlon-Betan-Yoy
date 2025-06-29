@@ -10,10 +10,6 @@ html, body {
     color: #FFD700; /* gold text */
 }
 
-#resume-content {
-    display: none !important;
-}
-
 /* 2. Background image */
 body {
     background-image: url('assets/EarthPictureSimpleTech.webp');
