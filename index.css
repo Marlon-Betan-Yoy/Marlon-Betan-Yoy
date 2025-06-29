@@ -12,7 +12,7 @@ html, body {
 
 /* 2. Background image */
 body {
-    background-image: url('assests\EarthPictureSimpleTech.webp');
+    background-image: url('assets/EarthPictureSimpleTech.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
