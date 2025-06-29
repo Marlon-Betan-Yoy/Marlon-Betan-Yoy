@@ -286,24 +286,28 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
         .page-nav a {
             display: inline-block;
-            min-width: 40%;
-            max-width: 48%;
-            text-align: center;
-            padding: 6px 8px;
+            padding: 8px 14px;
             font-size: 0.9rem;
+            background: rgba(255,255,255,0.8);
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1.5px solid #000;
+            border-radius: 6px;
+            text-align: center;
+            transition: background 0.3s ease;
             box-sizing: border-box;
-            margin: 0 auto;
-            flex: 1 1 45%;
         }
 
         .page-nav ul {
+            display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
             justify-content: center;
-            gap: 10px 6px; /* row gap | column gap */
+            gap: 10px 6px; /* row and column gap */
             padding: 0;
             margin: 0 auto;
             width: 90%;
+            list-style: none;
         }
 
     .accordion,
