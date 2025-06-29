@@ -231,6 +231,24 @@ body > *:not(.profile):not(.page-nav):first-of-type {
             filter: brightness(1.1);
         }
 
+.btn-1014 {
+    display: block;
+    margin: 20px auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.8);
+    color: #000;
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+    .btn-1014:hover {
+        background: rgba(255,255,255,1);
+    }
+
 
 /* 1. Mobile: 0–600px */
 @media (max-width: 600px) {
