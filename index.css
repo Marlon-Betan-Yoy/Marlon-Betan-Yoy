@@ -73,8 +73,10 @@ body {
         margin: 0;
         color: #000; /* black inside the box */
     }
-
-
+    
+.div-1004 {
+    padding-bottom: 2rem;
+}
 
 /* 4. NAVIGATION: force horizontal, each link in its own box */
 .page-nav {
