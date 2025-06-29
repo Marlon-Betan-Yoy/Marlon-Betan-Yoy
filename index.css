@@ -34,6 +34,13 @@ body {
     margin-bottom: 0; /* give breathing room before nav */
 }
 
+.accordion,
+.panel {
+    position: relative; /* default flow position */
+    z-index: 1; /* stays under fixed nav/profile */
+}
+
+
     /* free-floating circle */
     .profile img {
         position: absolute;
@@ -160,8 +167,6 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     margin-top: 20px;
     /* 150px for image, ~20px for text-box padding, ~50px for nav height */
 }
-
-.resumecontenct
 
 /* Make header & nav stick to the top */
 .profile,
