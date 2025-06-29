@@ -327,6 +327,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
     .ul-1001 li {
         max-width: 250px; /* limit width for better appearance */
+        align-self: center;
     }
 
     .btn-1014 {
@@ -349,6 +350,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
     .ul-1001 li {
         max-width: 250px; /* limit width for better appearance */
+        align-self: center;
     }
 
     .page-nav {
@@ -386,6 +388,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     }
     .ul-1001 li {
         max-width: 250px; /* limit width for better appearance */
+        align-self: center;
     }
 
     .section-box,
@@ -411,6 +414,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
     .ul-1001 li {
         max-width: 250px; /* limit width for better appearance */
+        align-self: center;
     }
 
     .section-box,
@@ -450,6 +454,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
     .ul-1001 li {
         max-width: 250px; /* limit width for better appearance */
+        align-self: center;
     }
 
     .section-box,
