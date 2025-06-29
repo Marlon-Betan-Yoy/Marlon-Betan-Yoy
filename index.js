@@ -25,3 +25,17 @@ const init = () => {
 
 document.addEventListener('DOMContentLoaded', init);
 
+// Assuming the code is loaded after DOM ready
+
+const resumeBtn = document.querySelector('.btn-resume.btn-1014');
+const resumeContent = document.getElementById('resume-content');
+
+if (resumeBtn && resumeContent) {
+    resumeBtn.addEventListener('click', () => {
+        const isHidden = resumeContent.style.display === 'none' || resumeContent.style.display === '';
+        resumeContent.style.display = isHidden ? 'block' : 'none';
+        resumeBtn.textContent = isHidden ? 'Hide Resume' : 'Show Resume';
+        resumeBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+    });
+}
+

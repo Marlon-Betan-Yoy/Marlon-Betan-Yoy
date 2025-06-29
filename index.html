@@ -1,226 +1,249 @@
+
 <!-- File: MyWebSiteHTMLv1.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html-1001">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Marlon Betancourt - Personal Website</title>
-    <link rel="stylesheet" href="index.css" />
+<head class="head-1002">
+
+    <meta charset="UTF-8" class="meta-1003" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" class="meta-1004" />
+    <title class="title-1005">Marlon Betancourt - Personal Website</title>
+    <link rel="stylesheet" href="index.css" class="link-1006" />
+
 </head>
 
-<body>
+<body class="body-1007">
     <!-- Header / Profile -->
-    <div class="profile">
-        <img src="assets\Marlon-Betancourt-IT-PRO.webp" alt="Marlon Betancourt"/>
-        <div class="profile-text-box">
-            <h1>Marlon Betancourt</h1>
-            <p>Certified IT Professional</p>
+    <div class="profile div-1008">
+        <img src="assets/Marlon-Betancourt-IT-PRO.webp" alt="Marlon Betancourt" class="profile-img img-1009" />
+        <div class="profile-text-box div-1010">
+            <h1 class="h1-1011">Marlon Betancourt</h1>
+            <p class="p-1012">Certified IT Professional</p>
         </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons div-1130">
+            <a href="https://snapchat.com/add/marlonyoy" target="_blank" rel="noopener noreferrer" class="a-1131">Snapchat</a>
+            <a href="https://instagram.com/marlonyoy" target="_blank" rel="noopener noreferrer" class="a-1132">Instagram</a>
+            <a href="https://www.linkedin.com/in/marlon-betancourt-3320591a8/" target="_blank" rel="noopener noreferrer" class="a-1133">LinkedIn</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="twitter a-1134">Twitter</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="facebook a-1135">Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="credly a-1136">Credly</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="github a-1137">GitHub</a>
+        </div>
+
     </div>
 
-    <!-- Page Navigation -->
-    <nav class="page-nav">
-        <ul>
-            <li><a href="#summary">Professional Summary</a></li>
-            <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#languages">Languages</a></li>
-        </ul>
-    </nav>
+    <div id="resume-content" class="resume-container div-1015" style="display:none;">
 
-    <!-- Sections -->
-    <!-- Professional Summary from resume fileciteturn1file2 -->
-    <section id="summary">
-        <button class="accordion">Professional Summary</button>
-        <div class="panel section-box">
-            <p>Well-rounded IT Professional. Certified and experienced in all major IT fields. Holds the following Certifications: Microsoft Certified Solutions Expert (MCSE), Cisco CCNA, CompTIA Network+, CompTIA Security+, CompTIA A+, Microsoft 365 Certified: Modern Desktop Administrator, AWS Certified Cloud Practitioner. Currently the IT Support Admin at Rialto Capital. Worked positions such as: IT Service Delivery Project Coordinator for CSL Plasma, PC imaging specialist for Bright Healthcare, Lead Technician for a PC replacement project at Baptist Hospital, IT Administrator/Advisor for a Health Insurance Agency. US Navy veteran. Highly capable, extremely adaptable and a quick learner. “I have a strong drive and determination to be at my best professionally and personally every day.”</p>
-        </div>
-    </section>
-
-    <!-- Work Experience from resume fileciteturn1file2 -->
-    <section id="work-experience">
-        <!-- Top‐level “Work Experience” accordion -->
-        <button class="accordion">Work Experience</button>
-        <div class="panel section-box">
-
-            <!-- 1. Rialto Capital -->
-            <button class="accordion">
-                Information Technology Support Administrator – Rialto Capital – Miami, FL
-                <span class="date">June 2023 to Present</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Technical Lead and Team Lead: managed and trained 6 agents supporting ~400 associates.</li>
-                    <li>Problem, Incident, and Request Management (ITIL).</li>
-                    <li>Led projects: asset roll-outs & refreshes for iOS devices, Windows PCs, and hardware.</li>
-                    <li>Frequent executive support in a white-glove environment for 7-figure deals.</li>
-                    <li>Patch management: migrations/upgrades across 500+ assets.</li>
-                    <li>Automation: built scripts/systems for operations, security, networking, patching, troubleshooting, reporting, data collection, and configurations.</li>
-                    <li>Tools: Salesforce, Freshservice, Okta, FortiClient, NinjaOne RMM, Azure, Intune/Office 365 Admin, OpenAI, TeamViewer.</li>
-                </ul>
-            </div>
-
-            <!-- 2. CSL Plasma -->
-            <button class="accordion">
-                Information Technology Service Delivery Coordinator – CSL Plasma – Boca Raton, FL
-                <span class="date">June 2022 to April 2023</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Supported 340+ US locations on large-scale projects (some ≥ 7 figures).</li>
-                    <li>Crisis & project management, networking, desktop/MDM support, imaging, configuration, deployment.</li>
-                    <li>Developed/improved processes & workflows for IT implementations and refreshes.</li>
-                    <li>Project coordination: action plans, asset & progress tracking, reporting.</li>
-                    <li>Scripting: PowerShell, Batch, .reg.</li>
-                    <li>Special Helpdesk (HEAT & ServiceNow), remote support.</li>
-                </ul>
-            </div>
-
-            <!-- 3. NTT DATA / Bright Healthcare -->
-            <button class="accordion">
-                Infrastructure Design Specialist – NTT DATA (Bright Healthcare) – Miami, FL
-                <span class="date">Sept 2021 to Mar 2022</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Endpoint deployments for 500+ devices in a HIPAA-regulated environment.</li>
-                    <li>Tier 1-3 helpdesk: SCCM/MECM, Active Directory, Azure, imaging, remote support, VoIP.</li>
-                    <li>Physical IT security assessments & inventory for 30+ clinics.</li>
-                    <li>PC repair/configuration/disposal for 300+ machines (60% faster rollouts).</li>
-                    <li>Training/support for software migrations/integrations; telemedicine & medical apps.</li>
-                </ul>
-            </div>
-
-            <!-- 4. L2R Consulting -->
-            <button class="accordion">
-                IT Contractor – L2R Consulting – Miami, FL
-                <span class="date">July 2021 to Sept 2021</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Short-term contracts: Avaya phone systems, AD, Citrix, PC/Mac imaging, helpdesk, ServiceNow.</li>
-                    <li>Asset inventory: deployment & retirement; Tier 1-2 desktop support.</li>
-                </ul>
-            </div>
-
-            <!-- 5. Baptist Health / Prosys -->
-            <button class="accordion">
-                Lead Deployment Technician – Baptist Health South Florida/Prosys – Miami, FL
-                <span class="date">Mar 2021 to June 2021</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Led PC replacement project at the largest hospital site with a 5-tech team.</li>
-                    <li>Met daily deployment goals despite setbacks; managed desktops, laptops, and Tiny PCs.</li>
-                    <li>Replaced devices, deployed software, and migrated user data.</li>
-                </ul>
-            </div>
-
-            <!-- 6. Sunshine Life & Health Advisors -->
-            <button class="accordion">
-                IT Adviser & Helpdesk Administrator – Sunshine Life & Health Advisors – Miami, FL
-                <span class="date">Sept 2020 to Mar 2021</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Managed broker support team; advised executives & management.</li>
-                    <li>Tier 1-3 helpdesk tickets; remote & phone support for agents & brokers.</li>
-                    <li>Administered Qubicles VOIP call-center platform; optimized lead generation.</li>
-                    <li>Designed quick-fixes for server/back-end issues (ISP blackouts, outages).</li>
-                    <li>Coordinated troubleshooting with third-party vendors.</li>
-                </ul>
-            </div>
-
-            <!-- 7. U.S. Navy -->
-            <button class="accordion">
-                U.S. Navy – Chicago, IL
-                <span class="date">July 2019 to Dec 2019</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Learned persistence, discipline, and self-control under high stress.</li>
-                    <li>Developed leadership, coaching, and critical-thinking skills.</li>
-                    <li>Adapted quickly to diverse teams and challenging situations.</li>
-                </ul>
-            </div>
-
-            <!-- 8. Gym Supervisor -->
-            <button class="accordion">
-                Gym Supervisor – Miami, FL
-                <span class="date">Mar 2016 to Mar 2019</span>
-            </button>
-            <div class="panel">
-                <ul>
-                    <li>Managed staff, coached teams, and handled customer relations.</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-
-    <section id="education">
-        <button class="accordion">Education</button>
-        <div class="panel section-box">
-            <ul>
-                <li>IT Certifications in Information Technology, New Horizons Computer Learning Center – Miami, FL (Jan 2020 – 2021)</li>
-                <li>High School Diploma in Computer Science, Coral Gables Senior High School – Miami, FL (Aug 2015 – May 2019)</li>
+        <!-- Page Navigation -->
+        <nav class="page-nav nav-1013">
+            <ul class="ul-1014">
+                <li class="li-1015"><a href="#summary" class="a-1016">Professional Summary</a></li>
+                <li class="li-1017"><a href="#work-experience" class="a-1018">Work Experience</a></li>
+                <li class="li-1019"><a href="#education" class="a-1020">Education</a></li>
+                <li class="li-1021"><a href="#certifications" class="a-1022">Certifications</a></li>
+                <li class="li-1023"><a href="#skills" class="a-1024">Skills</a></li>
+                <li class="li-1025"><a href="#languages" class="a-1026">Languages</a></li>
             </ul>
-        </div>
-    </section>
+        </nav>
 
-    <section id="certifications">
-        <button class="accordion">Certifications &amp; Licenses</button>
-        <div class="panel section-box">
-            <ul>
-                <li>Cisco CCNA (May 2022 – May 2025)</li>
-                <li>Microsoft Certified Systems Engineer (MCSE) (2020 – Present)</li>
-                <li>Microsoft 365 Certified: Modern Desktop Administrator Associate (Apr 2020 – Present)</li>
-                <li>CompTIA Network+ (Jun 2022 – Mar 2025)</li>
-                <li>CompTIA Security+ (May 2020 – May 2023)</li>
-                <li>CompTIA A+ (Mar 2020 – Jun 2025)</li>
-                <li>AWS Certified Cloud Practitioner (May 2022 – May 2025)</li>
-            </ul>
-        </div>
-    </section>
+        <!-- Sections -->
+        <!-- Professional Summary -->
+        <section id="summary" class="section-1027">
+            <button class="accordion btn-1028">Professional Summary</button>
+            <div class="panel section-box div-1029">
+                <p class="p-1030">
+                    Well-rounded IT Professional. Certified and experienced in all major IT fields. Holds the following Certifications:
+                    Microsoft Certified Solutions Expert (MCSE), Cisco CCNA, CompTIA Network+, CompTIA Security+, CompTIA A+,
+                    Microsoft 365 Certified: Modern Desktop Administrator, AWS Certified Cloud Practitioner. Currently the IT Support
+                    Admin at Rialto Capital. Worked positions such as: IT Service Delivery Project Coordinator for CSL Plasma,
+                    PC imaging specialist for Bright Healthcare, Lead Technician for a PC replacement project at Baptist Hospital,
+                    IT Administrator/Advisor for a Health Insurance Agency. US Navy veteran. Highly capable, extremely adaptable
+                    and a quick learner. “I have a strong drive and determination to be at my best professionally and personally every day.”
+                </p>
+            </div>
+        </section>
 
-    <section id="skills">
-        <button class="accordion">Skills</button>
-        <div class="panel section-box">
-            <ul>
-                <li>Windows Server, Active Directory, Networking, Troubleshooting</li>
-                <li>PowerShell, Scripting, Automation</li>
-                <li>Cloud Computing (AWS, Azure), Intune, SCCM</li>
-                <li>VoIP, Citrix, RMM Tools (NinjaOne), Freshservice, Okta</li>
-                <li>Project Coordination, ITIL, Crisis Management, Technical Writing</li>
-            </ul>
-        </div>
-    </section>
+        <!-- Work Experience -->
+        <section id="work-experience" class="section-1031">
+            <button class="accordion btn-1032">Work Experience</button>
+            <div class="panel section-box div-1033">
 
-    <section id="languages">
-        <button class="accordion">Languages</button>
-        <div class="panel section-box">
-            <ul>
-                <li>Spanish – Fluent (Native)</li>
-                <li>English – Fluent (Professional)</li>
-            </ul>
-        </div>
-    </section>
+                <!-- 1. Rialto Capital -->
+                <button class="accordion btn-1034">
+                    Information Technology Support Administrator – Rialto Capital – Miami, FL
+                    <span class="date span-1035">June 2023 to Present</span>
+                </button>
+                <div class="panel div-1036">
+                    <ul class="ul-1037">
+                        <li class="li-1038">Technical Lead and Team Lead: managed and trained 6 agents supporting ~400 associates.</li>
+                        <li class="li-1039">Problem, Incident, and Request Management (ITIL).</li>
+                        <li class="li-1040">Led projects: asset roll-outs &amp; refreshes for iOS devices, Windows PCs, and hardware.</li>
+                        <li class="li-1041">Frequent executive support in a white-glove environment for 7-figure deals.</li>
+                        <li class="li-1042">Patch management: migrations/upgrades across 500+ assets.</li>
+                        <li class="li-1043">Automation: built scripts/systems for operations, security, networking, patching, troubleshooting, reporting, data collection, and configurations.</li>
+                        <li class="li-1044">Tools: Salesforce, Freshservice, Okta, FortiClient, NinjaOne RMM, Azure, Intune/Office 365 Admin, OpenAI, TeamViewer.</li>
+                    </ul>
+                </div>
 
-    <!-- Social Icons -->
-    <div class="social-icons">
-        <a href="https://snapchat.com/add/marlonyoy" target="_blank" rel="noopener noreferrer">Snapchat</a>
-        <a href="https://instagram.com/marlonyoy" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.linkedin.com/in/marlon-betancourt-3320591a8/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="twitter">Twitter</a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="facebook">Facebook</a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="credly">Credly</a>
-        <a href="#" target="_blank" rel="noopener noreferrer" class="github">GitHub</a>
+                <!-- 2. CSL Plasma -->
+                <button class="accordion btn-1045">
+                    Information Technology Service Delivery Coordinator – CSL Plasma – Boca Raton, FL
+                    <span class="date span-1046">June 2022 to April 2023</span>
+                </button>
+                <div class="panel div-1047">
+                    <ul class="ul-1048">
+                        <li class="li-1049">Supported 340+ US locations on large-scale projects (some ≥ 7 figures).</li>
+                        <li class="li-1050">Crisis &amp; project management, networking, desktop/MDM support, imaging, configuration, deployment.</li>
+                        <li class="li-1051">Developed/improved processes &amp; workflows for IT implementations and refreshes.</li>
+                        <li class="li-1052">Project coordination: action plans, asset &amp; progress tracking, reporting.</li>
+                        <li class="li-1053">Scripting: PowerShell, Batch, .reg.</li>
+                        <li class="li-1054">Special Helpdesk (HEAT &amp; ServiceNow), remote support.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. NTT DATA / Bright Healthcare -->
+                <button class="accordion btn-1055">
+                    Infrastructure Design Specialist – NTT DATA (Bright Healthcare) – Miami, FL
+                    <span class="date span-1056">Sept 2021 to Mar 2022</span>
+                </button>
+                <div class="panel div-1057">
+                    <ul class="ul-1058">
+                        <li class="li-1059">Endpoint deployments for 500+ devices in a HIPAA-regulated environment.</li>
+                        <li class="li-1060">Tier 1-3 helpdesk: SCCM/MECM, Active Directory, Azure, imaging, remote support, VoIP.</li>
+                        <li class="li-1061">Physical IT security assessments &amp; inventory for 30+ clinics.</li>
+                        <li class="li-1062">PC repair/configuration/disposal for 300+ machines (60% faster rollouts).</li>
+                        <li class="li-1063">Training/support for software migrations/integrations; telemedicine &amp; medical apps.</li>
+                    </ul>
+                </div>
+
+                <!-- 4. L2R Consulting -->
+                <button class="accordion btn-1064">
+                    IT Contractor – L2R Consulting – Miami, FL
+                    <span class="date span-1065">July 2021 to Sept 2021</span>
+                </button>
+                <div class="panel div-1066">
+                    <ul class="ul-1067">
+                        <li class="li-1068">Short-term contracts: Avaya phone systems, AD, Citrix, PC/Mac imaging, helpdesk, ServiceNow.</li>
+                        <li class="li-1069">Asset inventory: deployment &amp; retirement; Tier 1-2 desktop support.</li>
+                    </ul>
+                </div>
+
+                <!-- 5. Baptist Health / Prosys -->
+                <button class="accordion btn-1070">
+                    Lead Deployment Technician – Baptist Health South Florida/Prosys – Miami, FL
+                    <span class="date span-1071">Mar 2021 to June 2021</span>
+                </button>
+                <div class="panel div-1072">
+                    <ul class="ul-1073">
+                        <li class="li-1074">Led PC replacement project at the largest hospital site with a 5-tech team.</li>
+                        <li class="li-1075">Met daily deployment goals despite setbacks; managed desktops, laptops, and Tiny PCs.</li>
+                        <li class="li-1076">Replaced devices, deployed software, and migrated user data.</li>
+                    </ul>
+                </div>
+
+                <!-- 6. Sunshine Life & Health Advisors -->
+                <button class="accordion btn-1077">
+                    IT Adviser &amp; Helpdesk Administrator – Sunshine Life &amp; Health Advisors – Miami, FL
+                    <span class="date span-1078">Sept 2020 to Mar 2021</span>
+                </button>
+                <div class="panel div-1079">
+                    <ul class="ul-1080">
+                        <li class="li-1081">Managed broker support team; advised executives &amp; management.</li>
+                        <li class="li-1082">Tier 1-3 helpdesk tickets; remote &amp; phone support for agents &amp; brokers.</li>
+                        <li class="li-1083">Administered Qubicles VOIP call-center platform; optimized lead generation.</li>
+                        <li class="li-1084">Designed quick-fixes for server/back-end issues (ISP blackouts, outages).</li>
+                        <li class="li-1085">Coordinated troubleshooting with third-party vendors.</li>
+                    </ul>
+                </div>
+
+                <!-- 7. U.S. Navy -->
+                <button class="accordion btn-1086">
+                    U.S. Navy – Chicago, IL
+                    <span class="date span-1087">July 2019 to Dec 2019</span>
+                </button>
+                <div class="panel div-1088">
+                    <ul class="ul-1089">
+                        <li class="li-1090">Learned persistence, discipline, and self-control under high stress.</li>
+                        <li class="li-1091">Developed leadership, coaching, and critical-thinking skills.</li>
+                        <li class="li-1092">Adapted quickly to diverse teams and challenging situations.</li>
+                    </ul>
+                </div>
+
+                <!-- 8. Gym Supervisor -->
+                <button class="accordion btn-1093">
+                    Gym Supervisor – Miami, FL
+                    <span class="date span-1094">Mar 2016 to Mar 2019</span>
+                </button>
+                <div class="panel div-1095">
+                    <ul class="ul-1096">
+                        <li class="li-1097">Managed staff, coached teams, and handled customer relations.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section-1098">
+            <button class="accordion btn-1099">Education</button>
+            <div class="panel section-box div-1100">
+                <ul class="ul-1101">
+                    <li class="li-1102">IT Certifications in Information Technology, New Horizons Computer Learning Center – Miami, FL (Jan 2020 – 2021)</li>
+                    <li class="li-1103">High School Diploma in Computer Science, Coral Gables Senior High School – Miami, FL (Aug 2015 – May 2019)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section-1104">
+            <button class="accordion btn-1105">Certifications &amp; Licenses</button>
+            <div class="panel section-box div-1106">
+                <ul class="ul-1107">
+                    <li class="li-1108">Cisco CCNA (May 2022 – May 2025)</li>
+                    <li class="li-1109">Microsoft Certified Systems Engineer (MCSE) (2020 – Present)</li>
+                    <li class="li-1110">Microsoft 365 Certified: Modern Desktop Administrator Associate (Apr 2020 – Present)</li>
+                    <li class="li-1111">CompTIA Network+ (Jun 2022 – Mar 2025)</li>
+                    <li class="li-1112">CompTIA Security+ (May 2020 – May 2023)</li>
+                    <li class="li-1113">CompTIA A+ (Mar 2020 – Jun 2025)</li>
+                    <li class="li-1114">AWS Certified Cloud Practitioner (May 2022 – May 2025)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section-1115">
+            <button class="accordion btn-1116">Skills</button>
+            <div class="panel section-box div-1117">
+                <ul class="ul-1118">
+                    <li class="li-1119">Windows Server, Active Directory, Networking, Troubleshooting</li>
+                    <li class="li-1120">PowerShell, Scripting, Automation</li>
+                    <li class="li-1121">Cloud Computing (AWS, Azure), Intune, SCCM</li>
+                    <li class="li-1122">VoIP, Citrix, RMM Tools (NinjaOne), Freshservice, Okta</li>
+                    <li class="li-1123">Project Coordination, ITIL, Crisis Management, Technical Writing</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages" class="section-1124">
+            <button class="accordion btn-1125">Languages</button>
+            <div class="panel section-box div-1126">
+                <ul class="ul-1127">
+                    <li class="li-1128">Spanish – Fluent (Native)</li>
+                    <li class="li-1129">English – Fluent (Professional)</li>
+                </ul>
+            </div>
+        </section>
     </div>
 
-    <script src="index.js"></script>
+    <section class="section-extra div-1100">
+        <!-- Placeholder for new content -->
+    </section>
+
+    <script src="index.js" class="script-1138"></script>
+
 </body>
+
 </html>

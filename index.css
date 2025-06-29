@@ -19,6 +19,82 @@ body {
     background-attachment: fixed;
 }
 
+/* Base styles (desktop first or mobile first as you prefer) */
+/* Example styling for social icons moved under profile-text-box */
+.profile.div-1001 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons.div-1006 {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Hide resume container initially - alternatively inline style in HTML does this */
+.resume-container.div-1015 {
+    display: none;
+}
+
+/* Resume Toggle Button */
+.btn-resume.btn-1014 {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive Breakpoints */
+
+/* Mobile: up to 600px */
+@media (max-width: 600px) {
+    .profile.div-1001 {
+        padding: 1rem;
+    }
+
+    .social-icons.div-1006 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .btn-resume.btn-1014 {
+        width: 100%;
+    }
+}
+
+/* Tablet: 601px to 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .profile.div-1001 {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .social-icons.div-1006 {
+        justify-content: flex-start;
+    }
+}
+
+/* Desktop: 901px to 1440px */
+@media (min-width: 901px) and (max-width: 1440px) {
+    .profile.div-1001 {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+/* TV / Large screens: 1441px and above */
+@media (min-width: 1441px) {
+    .profile.div-1001 {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
 /*3. PROFILE: image floats free, text sits in its own box */
 .profile {
     position: fixed;
