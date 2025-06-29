@@ -1,0 +1,232 @@
+﻿/* File: MyWebSiteCSSv1.css */
+
+/* 1. Full-viewport reset and gold text */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #FFD700; /* gold text */
+}
+
+/* 2. Background image */
+body {
+    background-image: url('assests\EarthPictureSimpleTech.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*3. PROFILE: image floats free, text sits in its own box */
+.profile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    background: transparent;
+    /* no background/border here */
+    padding-top: 18.6px; /* same as your image’s top */
+    margin-bottom: 0; /* give breathing room before nav */
+}
+
+    /* free-floating circle */
+    .profile img {
+        position: absolute;
+        top: 18.6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #FFD700;
+        object-fit: cover;
+        z-index: 2;
+    }
+
+/* the one box around BOTH lines of text */
+.profile-text-box {
+    position: relative; /* now in‐flow, will push nav below */
+    margin: 165px auto 20px; /* centering + gap from image */
+    background: rgba(255,255,255,0.8);
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    padding: 20px 30px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+    .profile-text-box h1,
+    .profile-text-box p {
+        margin: 0;
+        color: #000; /* black inside the box */
+    }
+
+
+
+/* 4. NAVIGATION: force horizontal, each link in its own box */
+.page-nav {
+    position: fixed;
+    top: calc(18.6px + 150px + 20px + 40px);
+    /* = top padding of .profile (18.6)
+     + image height (150)
+     + gap you left in .profile-text-box (20)
+     + half of that gap below (≈40) to center nav */
+
+    z-index: 900; /* just under .profile */
+    background: transparent;
+    margin: 0 auto 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+    .page-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* lay li’s out side-by-side */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .page-nav a {
+        display: inline-block;
+        background: rgba(255,255,255,0.8);
+        color: #000; /* black text */
+        padding: 8px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        border: 1.5px solid #000;
+        border-radius: 6px;
+        transition: background 0.3s ease;
+    }
+
+        .page-nav a:hover {
+            background: rgba(255,255,255,1);
+        }
+
+/* 5. Section boxes & accordion */
+.section-box {
+    background: rgba(255,255,255,0.8);
+    color: #000;
+    max-width: 700px; /* or whatever width you prefer */
+    margin: 10px auto 30px; /* auto-center + gap below */
+    padding: 15px;
+    border-radius: 6px;
+    border: 1.5px solid #000;
+    text-align: center; /* center all the text inside */
+}
+
+section {
+    text-align: center;
+}
+.accordion {
+    background: rgba(255,255,255,0.8);
+    color: #000;
+    display: inline-block; /* shrink-wrap */
+    margin: 20px auto 0; /* center it + gap above */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 1.5px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    text-align: center; /* center the label */
+}
+
+/* Push page content down so it doesn’t hide under the sticky header */
+body > *:not(.profile):not(.page-nav):first-of-type {
+    margin-top: 20px;
+    /* 150px for image, ~20px for text-box padding, ~50px for nav height */
+}
+
+/* Make header & nav stick to the top */
+.profile,
+.page-nav {
+    position: relative;
+    top: 0;
+    
+    
+}
+
+    .accordion:after {
+        content: '\002B';
+        float: right;
+    }
+
+    .accordion.active:after {
+        content: '\2212';
+    }
+
+    /* Show only when active */
+    .accordion.active + .panel {
+        display: block;
+        max-height: none; /* let content size naturally */
+        overflow: visible;
+        transition: none;
+    }
+
+.panel {
+    display: none;
+}
+
+/* 6. Social icons bar */
+.social-icons {
+    position: relative;
+    margin: 40px auto; /* push down, center, gap above/below */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    bottom: 20px;
+}
+
+    .social-icons a {
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        border: 1.5px solid #000;
+        border-radius: 6px;
+        transition: background 0.3s ease;
+    }
+        /* Branded colors */
+        .social-icons a[href*="snapchat"] {
+            background: #FFFC00;
+            color: #000;
+        }
+
+        .social-icons a[href*="instagram"] {
+            background: linear-gradient(45deg,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D);
+        }
+
+        .social-icons a[href*="linkedin"] {
+            background: #0077B5;
+        }
+
+        .social-icons a.twitter {
+            background: #1DA1F2;
+        }
+
+        .social-icons a.facebook {
+            background: #1877F2;
+        }
+
+        .social-icons a.credly {
+            background: #0492C2;
+        }
+
+        .social-icons a.github {
+            background: #181717;
+        }
+        /* Hover effect */
+        .social-icons a:hover {
+            filter: brightness(1.1);
+        }

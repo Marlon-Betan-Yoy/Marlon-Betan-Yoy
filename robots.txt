@@ -1,0 +1,7 @@
+# Allow all crawlers access to everything
+User-agent: *
+Disallow:
+
+# Optional: Point to sitemap
+Sitemap: https://malonbetancourtpersonalwebsite.netlify.app/sitemap.xml
+
