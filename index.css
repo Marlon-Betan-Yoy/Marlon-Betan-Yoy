@@ -11,8 +11,7 @@ html, body {
 }
 
 /* 2. Background image */
-body {
-    background-image: url('assets/EarthPictureSimpleTech.webp');
+body {    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
