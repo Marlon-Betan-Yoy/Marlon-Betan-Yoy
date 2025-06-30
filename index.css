@@ -364,6 +364,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     .profile-text-box {
         width: 80%;
         font-size: 1rem;
+        min-width: 400px;
     }
 
     .ul-1001 li {
