@@ -397,8 +397,9 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 /* 3. Medium Screens: 901–1200px */
 @media (max-width: 1200px) and (min-width: 901px) {
     .profile-text-box {
-        width: 70%;
+        width: 85%;
         font-size: 1.05rem;
+        min-width: 400px; /* ensure it’s wide enough */ 
     }
 
     .section-box {
