@@ -286,7 +286,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         background-image: url('assets/EarthPictureSimpleTechMobile.webp');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: 60% center;
+        background-position: 45% center;
         background-attachment: fixed;
         position: relative;
     }
