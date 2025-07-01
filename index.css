@@ -302,7 +302,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: local;
         min-height: 100vh;
         backface-visibility: hidden;
         will-change: transform;
