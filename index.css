@@ -10,6 +10,15 @@ html, body {
     color: #FFD700; /* gold text */
 }
 
+body {
+    min-height: 100vh;
+    background-color: black;
+    background-image: url('assets/EarthPictureSimpleTech.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
     body::before {
         content: "";
         position: fixed;
