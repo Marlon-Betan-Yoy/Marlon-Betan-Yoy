@@ -283,7 +283,6 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     /* fix jumpyness and background issues on mobile */
     html, body {
         scroll-behavior: smooth;
-        backface-visibility: hidden;
         -webkit-overflow-scrolling: touch;
         transform: translateZ(0);
     }
@@ -457,8 +456,18 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 /* 5. Extra-Large / TVs: 1441px+ */
 @media (min-width: 1441px) {
     body {
-        background-size: contain; /* prevent zoomed background */
+        background-size: cover; /* prevent zoomed background */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
     }
+
+    /* 2. Background image */
+    body {
+
+    }
+
 
     .profile-text-box {
         width: auto;
