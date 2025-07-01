@@ -481,14 +481,14 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     #work-experience .accordion {
         display: block; /* Full width by default */
         width: auto;
-        max-width: 850px;
+        max-width: 1100px;
         min-width: 400px;
         margin: 10px auto;
         box-sizing: border-box;
     }
 
     #work-experience .panel {
-        max-width: 850px;
+        max-width: 1100px;
         margin: 0 auto 20px;
         padding: 12px;
         box-sizing: border-box;
@@ -498,7 +498,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
     #work-experience .section-box {
         display: block;
         width: auto;
-        max-width: 900px;
+        max-width: 1150px;
         margin: 0 auto;
     }
 
