@@ -297,13 +297,12 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 /* 1. Mobile: 0–767px */
 @media (max-width: 767px) {
     body {
-        position: fixed;
         background-color: #111;
         background-image: url('assets/EarthPictureSimpleTech.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
         min-height: 100vh;
         backface-visibility: hidden;
         will-change: transform;
