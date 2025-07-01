@@ -13,9 +13,6 @@ html, body {
     body::before {
         content: "";
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
         background-image: url('assets/EarthPictureSimpleTech.webp');
         background-size: cover;
         background-position: center top;
