@@ -472,11 +472,6 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         padding: 10px 16px;
     }
 
-    .ul-1001 li {
-        max-width: 250px; /* limit width for better appearance */
-        align-self: center;
-    }
-
     .section-box,
     .accordion {
         margin-left: auto;
