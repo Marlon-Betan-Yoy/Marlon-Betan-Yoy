@@ -289,7 +289,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         background-position: center;
         background-attachment: fixed;
         position: relative;
-        padding: 0; /* remove padding for mobile view */
+        padding-right: 14px; 
     }
 
     html, body {
