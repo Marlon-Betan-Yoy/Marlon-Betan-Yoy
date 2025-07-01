@@ -310,7 +310,6 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 
     html, body {
         scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
         transform: translateZ(0);
     }
 
