@@ -283,7 +283,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 /* 1. Mobile: 0–767px */
 @media (max-width: 767px) {
     body {
-        background-image: url('assets/EarthPictureSimpleTech.webp');
+        background-image: url('assets/EarthPictureSimpleTechMobile.webp');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
