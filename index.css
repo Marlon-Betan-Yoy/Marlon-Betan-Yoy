@@ -18,7 +18,7 @@ html, body {
         height: 100%;
         width: 100%;
         background-image: url('assets/EarthPictureSimpleTech.webp');
-        background-size: contain;
+        background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
         z-index: -1;
