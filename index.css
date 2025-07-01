@@ -21,7 +21,8 @@ html, body {
         pointer-events: none;
         opacity: 1;
         padding-left: env(safe-area-inset-left);
-        padding-right: env(safe-area-inset-right);
+        padding-right: env(safe-area-inset-right);       
+        background-attachment: fixed; /* keep background fixed mobile test */
     }
 
 body {
