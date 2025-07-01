@@ -477,5 +477,30 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         margin-left: auto;
         margin-right: auto;
     }
+
+    #work-experience .accordion {
+        display: block; /* Full width by default */
+        width: auto;
+        max-width: 850px;
+        min-width: 400px;
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
+
+    #work-experience .panel {
+        max-width: 850px;
+        margin: 0 auto 20px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    /* Optional: prevent any weird wrapping issues */
+    #work-experience .section-box {
+        display: block;
+        width: auto;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
 }
 
