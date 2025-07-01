@@ -289,7 +289,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         background-position: center;
         background-attachment: fixed;
         position: relative;
-        padding-right: 30px;
+        padding-right: 40px;
         padding-left: -14px;
     }
 
