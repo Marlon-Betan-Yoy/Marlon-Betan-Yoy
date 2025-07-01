@@ -274,10 +274,17 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 /* 1. Mobile: 0–767px */
 @media (max-width: 767px) {
     body {
-        background-color: #111; /* darker background for mobile contrast */
+        background-color: #111;
+        background-image: url('assets/EarthPictureSimpleTech.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        min-height: 100vh;
+        backface-visibility: hidden;
+        will-change: transform;
     }
 
-    /* fix jumpyness and background issues on mobile */
     html, body {
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
