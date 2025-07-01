@@ -20,11 +20,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-
-body {
-    min-height: 100vh;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
 }
 
 /*3. PROFILE: image floats free, text sits in its own box */
