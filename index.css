@@ -280,6 +280,14 @@ body > *:not(.profile):not(.page-nav):first-of-type {
         background-color: #111; /* darker background for mobile contrast */
     }
 
+    /* fix jumpyness and background issues on mobile */
+    html, body {
+        scroll-behavior: smooth;
+        backface-visibility: hidden;
+        -webkit-overflow-scrolling: touch;
+        transform: translateZ(0);
+    }
+
     .page-nav {
         flex-direction: column;
         gap: 5px;
