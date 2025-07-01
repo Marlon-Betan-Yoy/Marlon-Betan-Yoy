@@ -11,12 +11,9 @@ html, body {
 }
 
 /* 2. Background image */
-body {    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
+body {
+    background-image: url('assets/EarthPictureSimpleTech.webp') !important;
+    background-color: black;
 }
 
 /*3. PROFILE: image floats free, text sits in its own box */
