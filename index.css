@@ -10,10 +10,25 @@ html, body {
     color: #FFD700; /* gold text */
 }
 
-/* 2. Background image */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url('assets/EarthPictureSimpleTech.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 1;
+    }
+
 body {
-    background-image: url('assets/EarthPictureSimpleTech.webp') !important;
-    background-color: black;
+    min-height: 100vh;
+    position: relative;
 }
 
 /*3. PROFILE: image floats free, text sits in its own box */
@@ -375,6 +390,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 @media (max-width: 900px) and (min-width: 768px) {
 
     body {
+        background-image: url('assets/EarthPictureSimpleTech.webp');
         background-size: cover; /* prevent zoomed background */
         background-position: center;
         background-repeat: no-repeat;
@@ -420,6 +436,7 @@ body > *:not(.profile):not(.page-nav):first-of-type {
 @media (max-width: 1200px) and (min-width: 901px) {
 
     body {
+        background-image: url('assets/EarthPictureSimpleTech.webp');
         background-size: cover; /* prevent zoomed background */
         background-position: center;
         background-repeat: no-repeat;
